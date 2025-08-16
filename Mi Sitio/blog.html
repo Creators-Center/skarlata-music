@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog del Artista</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<header>
+  <h1>Blog del Artista</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Últimas publicaciones</h2>
+
+  <!-- Filtros -->
+  <div class="filtros">
+    <button data-filtro="todos" class="active">Todos</button>
+    <button data-filtro="rap">Rap</button>
+    <button data-filtro="cumbia">Cumbia</button>
+    <button data-filtro="rock">Rock</button>
+  </div>
+
+  <!-- Entradas del blog -->
+<!-- Entradas del blog -->
+<section class="blog-grid">
+  <article class="blog-post rap">
+    <img src="img/blog1.jpg" alt="Concierto en vivo" />
+    <span class="categoria">Rap</span>
+    <h3>🔥 Concierto en vivo: Fusión de estilos</h3>
+    <p>Una noche donde la cumbia, el rap y el rock se unieron en un show inolvidable.</p>
+    <a href="post1.html">Leer más</a>
+  </article>
+
+  <article class="blog-post cumbia">
+    <img src="img/blog2.jpg" alt="Videoclip Ritmo y Rebeldía" />
+    <span class="categoria">Cumbia</span>
+    <h3>🎬 : "Ritmo y Rebeldía"</h3>
+    <p>Imágenes urbanas, mensajes potentes. Así se presenta el último videoclip del artista.</p>
+    <a href="post2.html">Ver videoclip</a>
+  </article>
+
+  <article class="blog-post rock">
+    <img src="img/blog3.jpg" alt="Entrevista exclusiva" />
+    <span class="categoria">Rock</span>
+    <h3>🎤 Entrevista exclusiva</h3>
+    <p>"No solo hago música, creo momentos", afirma el artista en su charla más íntima.</p>
+    <a href="post3.html">Leer entrevista</a>
+  </article>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-links">
+      <h4>Enlaces</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Síguenos</h4>
+<ul>
+  <li><a href="https://www.facebook.com/paula.murillo.904" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+  <li><a href="https://spotify.com/miartista" target="_blank" rel="noopener noreferrer"><i class="fab fa-spotify"></i> spotify</a></li>
+  <li><a href="https://www.instagram.com/skarlata.musica/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></li>
+  <li><a href="https://www.youtube.com/channel/UCQ58tt81eXsXk6NpdZioedQ" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> YouTube</a></li>
+</ul>
+    </div>
+  </div>
+</footer>
+
+<!-- Script para filtros -->
+<script src="js/filtrosBlog.js"></script>
+
+</body>
+</html>
